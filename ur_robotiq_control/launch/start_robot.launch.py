@@ -207,6 +207,7 @@ def launch_setup(context, *args, **kwargs):
         "force_torque_sensor_broadcaster",
         "tcp_pose_broadcaster",
         "ur_configuration_controller",
+        "robotiq_activation_controller",
         "gripper_knuckle_joint_position_controller",
     ]
     controllers_inactive = [

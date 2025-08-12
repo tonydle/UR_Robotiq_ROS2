@@ -93,45 +93,47 @@ Visualization Manager:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-        left_finger_tip:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        left_inner_finger:
+        robotiq_85_base_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        left_inner_knuckle:
+        robotiq_85_left_finger_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        left_outer_knuckle:
+        robotiq_85_left_finger_tip_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        onrobot_base_link:
+        robotiq_85_left_inner_knuckle_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        right_finger_tip:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        right_inner_finger:
+        robotiq_85_left_knuckle_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        right_inner_knuckle:
+        robotiq_85_right_finger_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        right_outer_knuckle:
+        robotiq_85_right_finger_tip_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        robotiq_85_right_inner_knuckle_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        robotiq_85_right_knuckle_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
@@ -196,23 +198,23 @@ Visualization Manager:
           Value: true
         gripper_tcp:
           Value: true
-        left_finger_tip:
+        robotiq_85_base_link:
           Value: true
-        left_inner_finger:
+        robotiq_85_left_finger_link:
           Value: true
-        left_inner_knuckle:
+        robotiq_85_left_finger_tip_link:
           Value: true
-        left_outer_knuckle:
+        robotiq_85_left_inner_knuckle_link:
           Value: true
-        onrobot_base_link:
+        robotiq_85_left_knuckle_link:
           Value: true
-        right_finger_tip:
+        robotiq_85_right_finger_link:
           Value: true
-        right_inner_finger:
+        robotiq_85_right_finger_tip_link:
           Value: true
-        right_inner_knuckle:
+        robotiq_85_right_inner_knuckle_link:
           Value: true
-        right_outer_knuckle:
+        robotiq_85_right_knuckle_link:
           Value: true
         shoulder_link:
           Value: true
@@ -247,21 +249,21 @@ Visualization Manager:
                         wrist_3_link:
                           flange:
                             tool0:
-                              onrobot_base_link:
-                                gripper_tcp:
+                              gripper_tcp:
+                                {}
+                              robotiq_85_base_link:
+                                robotiq_85_left_inner_knuckle_link:
                                   {}
-                                left_inner_knuckle:
+                                robotiq_85_left_knuckle_link:
+                                  robotiq_85_left_finger_link:
+                                    robotiq_85_left_finger_tip_link:
+                                      {}
+                                robotiq_85_right_inner_knuckle_link:
                                   {}
-                                left_outer_knuckle:
-                                  left_inner_finger:
-                                    left_finger_tip:
-                                      right_finger_tip:
-                                        {}
-                                right_inner_knuckle:
-                                  {}
-                                right_outer_knuckle:
-                                  right_inner_finger:
-                                    {}
+                                robotiq_85_right_knuckle_link:
+                                  robotiq_85_right_finger_link:
+                                    robotiq_85_right_finger_tip_link:
+                                      {}
                           ft_frame:
                             {}
       Update Interval: 0
@@ -312,25 +314,25 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz_default_plugins/Orbit
-      Distance: 0.8580546379089355
+      Distance: 1.7899622917175293
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: -0.020260609686374664
-        Y: 0.38319554924964905
-        Z: 0.3441917896270752
+        X: 0.6312918066978455
+        Y: 0.25531670451164246
+        Z: 0.1069301888346672
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.7503982782363892
+      Pitch: 0.7803982496261597
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 2.1753900051116943
+      Yaw: 1.0153884887695312
     Saved: ~
 Window Geometry:
   Displays:
@@ -348,5 +350,5 @@ Window Geometry:
   Views:
     collapsed: false
   Width: 1355
-  X: 1405
-  Y: 292
+  X: 1919
+  Y: 646

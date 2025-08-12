@@ -6,6 +6,9 @@ controller_manager:
     gripper_knuckle_joint_position_controller:
         type: position_controllers/JointGroupPositionController
 
+    robotiq_activation_controller:
+      type: robotiq_controllers/RobotiqActivationController
+
     io_and_status_controller:
       type: ur_controllers/GPIOController
 
@@ -46,6 +49,10 @@ gripper_knuckle_joint_position_controller:
   ros__parameters:
     joints:
       - $(var tf_prefix)robotiq_85_left_knuckle_joint
+
+robotiq_activation_controller:
+  ros__parameters:
+    default: true
 
 speed_scaling_state_broadcaster:
   ros__parameters:

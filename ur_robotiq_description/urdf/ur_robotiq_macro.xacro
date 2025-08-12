@@ -45,5 +45,13 @@
             <origin xyz="0 0 0" rpy="0 0 0" />
         </xacro:robotiq_gripper>
 
+        <!-- Add extra link for gripper TCP -->
+        <link name="${tf_prefix}gripper_tcp"/>
+        <joint name="${tf_prefix}gripper_tcp_joint" type="fixed">
+            <origin xyz="0 0 0.16" rpy="0 0 0"/>
+            <parent link="${tf_prefix}robotiq_85_base_link"/>
+            <child link="${tf_prefix}gripper_tcp"/>
+        </joint>
+
     </xacro:macro>
 </robot>

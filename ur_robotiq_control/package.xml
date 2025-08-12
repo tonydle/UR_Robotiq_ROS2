@@ -15,6 +15,7 @@
   <exec_depend>robot_state_publisher</exec_depend>
   <exec_depend>ur_robotiq_description</exec_depend>
   <exec_depend>ur_controllers</exec_depend>
+  <exec_depend>robotiq_controllers</exec_depend>
   <exec_depend>ur_robot_driver</exec_depend>
   <exec_depend>robotiq_driver</exec_depend>
   <exec_depend>ur_client_library</exec_depend>
