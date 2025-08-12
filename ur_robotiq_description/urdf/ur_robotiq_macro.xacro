@@ -41,7 +41,7 @@
         </xacro:ur_robot>
 
         <!--Create the Robotiq model -->
-        <xacro:robotiq_gripper name="RobotiqGripperHardwareInterface" prefix="" parent="${tf_prefix}tool0" use_fake_hardware="$(arg use_fake_hardware)" com_port="$(arg com_port)">
+        <xacro:robotiq_gripper name="RobotiqGripperHardwareInterface" prefix="${tf_prefix}" parent="${tf_prefix}tool0" use_fake_hardware="$(arg use_fake_hardware)" com_port="$(arg com_port)">
             <origin xyz="0 0 0" rpy="0 0 0" />
         </xacro:robotiq_gripper>
 
